@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Snackbar snackbar = Snackbar.make(coordinatorLayout, "Adding Action", Snackbar.LENGTH_LONG)
-                        .setAction("Dismiss", new View.OnClickListener() {
+                        .setAction("Dismis", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
 
