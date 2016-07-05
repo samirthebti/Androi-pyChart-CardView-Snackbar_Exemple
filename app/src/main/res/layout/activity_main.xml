@@ -14,7 +14,7 @@
         android:layout_gravity="center"
 
         card_view:cardBackgroundColor="@color/colorPrimaryDark"
-        card_view:cardCornerRadius="200dp"
+        card_view:cardCornerRadius="300dp"
         card_view:cardElevation="15dp">
 
         <com.github.mikephil.charting.charts.PieChart
