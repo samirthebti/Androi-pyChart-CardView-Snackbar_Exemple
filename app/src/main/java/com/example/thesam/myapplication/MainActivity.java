@@ -23,19 +23,27 @@ public class MainActivity extends AppCompatActivity {
     private FloatingActionButton fab;
     private CoordinatorLayout coordinatorLayout;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // UI references
+
         fab = (FloatingActionButton) findViewById(R.id.add);
         pieChart = (PieChart) findViewById(R.id.chart);
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
+        coordinatorLayout.setRotationX(60.0F);
+        coordinatorLayout.animate().rotationX(0.0F).setDuration(3000);
+
         //label initialisation
+
         label = new ArrayList<>();
         label.add("Algerie");
         label.add("Maroc");
         label.add("TUnisie");
         //data initialisation
+
         data = new ArrayList<>();
         data.add(new Entry(0.2f, 0));
         data.add(new Entry(0.2f, 1));
@@ -64,6 +72,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         pieChart.notifyDataSetChanged();
-
     }
 }
